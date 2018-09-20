@@ -51,11 +51,13 @@ table {
 body {
 	position: relative;
 	font: 14px/1.4 geneva, sans-serif; color: #0f2046;
-	background-image: url("../images/bosporous.jpg");
-	background-size: 100%;
+	background-color: rgba(79, 140, 239, .5);
+	background-image: url("../images/bosporous-optimized.jpg");
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position-y: -60px;
 	margin-left: 30px;
+	max-width: 1200px;
 }
 nav, footer{
 	background-color: rgba(255, 255, 255, .65);
@@ -76,21 +78,36 @@ a:visited {
 }
 .landmark {
 	float: right;
-	margin: 0 30px;
-	width: 400px;
+	margin: 30px;
+	width: 35%;
 }
-
+.tile {
+	width: 35%;
+	margin-bottom: 20px;
+	width: 35%;
+}
+figcaption {
+	font-style: italic;
+}
 h1{
 	font: 36px 'Lato';
-	width: 60%;
 	margin-bottom: 30px;
+	text-align: center;
+}
+h1 span{
+	font-size: 18px;
+	font-style: italic;
+	line-height: 5px;
+}
+section {
+	background-color: rgba(255, 255, 255, .5);
+	margin: 40px 30px;
+	padding: 10px 30px;
 }
 h2 {
 	font: 30px 'Lato';
-	background-color: rgba(255, 255, 255, .5);
-	margin: -20px -20px 0;
 	text-align: center;
-	padding: 10px;
+	padding: 20px;
 }
 h3{
 	font: 16px 'Lato';
@@ -100,12 +117,12 @@ h4{
 	font: 12px 'Lato';
 	margin: 1em 10px 0;
 }
-section{
-	margin: 0 0 60px 10px;
+main{
+	margin: 30px 20px 60px 10px;
 	border: 2px solid #0f2046;
 	background-color: rgba(255, 255, 255, .5);
-	padding: 20px;
-	width: 450px;
+	padding: 30px;
+	width: 65%;
 }
 li {
 	font-size: 12px;
@@ -123,6 +140,10 @@ ul{
 li > ul{
 	margin: 2px 30px 5px;
 	list-style-type: disc;
+}
+img{
+	width: 100%;
+	margin-top: 20px;
 }
 footer{
 	height: 10em;
