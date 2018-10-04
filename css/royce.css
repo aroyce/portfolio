@@ -52,34 +52,11 @@ table {
 }
 body {
 	position: relative;
-	font: 14px/1.4 geneva, sans-serif; color: #0f2046;
+	font: 14px/1.4 geneva, sans-serif; color: #0b1938;
 	background: rgba(79, 140, 239, .5) url("../images/bosporous-optimized.jpg") 0 -60px no-repeat;
 	background-size: contain;
 	margin-left: 30px;
 	width: 100%;
-}
-nav, footer{
-	background-color: rgba(255, 255, 255, .65);
-	margin-left: -30px;
-	padding: 20px;
-	width: 100%;
-}
-
-nav li{
-	display: inline-block;
-	margin: 30px;
-	font-size: 16px;
-}
-nav a {
-	text-decoration: none;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-a:hover {
-	hover: gray;
-}
-a:visited {
-	color: #362819;
 }
 .landmark {
 	float: right;
@@ -95,25 +72,30 @@ a:visited {
 	margin: 10px;
 
 }
+a:hover {
+	hover: gray;
+}
+a:visited {
+	color: #362819;
+}
 figcaption {
 	font-style: italic;
 }
 footer{
 	height: 10em;
 }
-
 footer a:visited {
 	color: blue;
 }
 h1{
 	font: 500 42px 'Roboto', sans-serif;
-	/* margin-bottom: 30px; */
-	text-align: center;
+	text-align: left;
 }
 h1 span{
 	font-size: 18px;
 	font-style: italic;
-	line-height: 5px;
+	display: block;
+	margin: 20px 0 30px;
 }
 h2 {
 	font: 30px 'Roboto', sans-serif;
@@ -155,12 +137,30 @@ main{
 	margin: 30px 20px 60px 10px;
 	border: 2px solid #0f2046;
 	background-color: rgba(255, 255, 255, .5);
-	padding: 30px;
+	/* padding: 10px 0 20px; */
 	width: 65%;
 }
+nav, footer{
+	background-color: rgba(255, 255, 255, .65);
+	margin-left: -30px;
+	padding: 20px;
+	width: 100%;
+}
+nav li{
+	display: inline-block;
+	margin: 30px;
+	font-size: 16px;
+}
+nav a {
+	text-decoration: none;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+p {
+	max-width: 900px;
+}
 section {
-	background-color: rgba(255, 255, 255, .5);
-	margin: 40px 30px;
+	background-color: rgba(255, 255, 255, .75);
+	margin: 40px;
 	padding: 10px 30px;
 }
 ul{
