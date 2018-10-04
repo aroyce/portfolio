@@ -73,7 +73,7 @@ body {
 
 }
 a:hover {
-	hover: gray;
+	color: gray;
 }
 a:visited {
 	color: #362819;
@@ -159,7 +159,7 @@ p {
 	max-width: 900px;
 }
 section {
-	background-color: rgba(255, 255, 255, .75);
+	background-color: rgb(255, 255, 255);
 	margin: 40px;
 	padding: 10px 30px;
 }
