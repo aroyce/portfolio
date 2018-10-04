@@ -148,8 +148,14 @@ nav, footer{
 }
 nav li{
 	display: inline-block;
-	margin: 30px;
+	width: 8em;
+	text-align: center;
 	font-size: 16px;
+}
+nav li.onpage {
+	background-color: white;
+	border: 2px solid #0f2046;
+	padding: 20px;
 }
 nav a {
 	text-decoration: none;
