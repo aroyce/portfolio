@@ -55,22 +55,23 @@ body {
 	font: 14px/1.4 geneva, sans-serif; color: #0b1938;
 	background: rgba(79, 140, 239, .5) url("../images/bosporous-optimized.jpg") 0 -60px no-repeat;
 	background-size: contain;
-	margin-left: 30px;
-	width: 100%;
+	margin: 30px;
+	/* width: 100%; */
+
 }
 .landmark {
-	float: right;
-	margin: 30px;
-	width: 35%;
+	grid-column-start: 3;
+	grid-row-start: 2;
+	border-radius: 10px;
 }
 .tile-container{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 .tile {
 	width: 300px;
 	margin: 10px;
-
 }
 a:hover {
 	color: gray;
@@ -80,6 +81,7 @@ a:visited {
 }
 figcaption {
 	font-style: italic;
+	margin-bottom: 30px;
 }
 footer{
 	height: 10em;
@@ -110,6 +112,10 @@ h4{
 	font: 12px 'Roboto', sans-serif;
 	margin: 1em 10px 0;
 }
+header {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
 i {
 	color: blue;
 	font-size: 24px;
@@ -121,7 +127,6 @@ i:hover {
 img{
 	max-width: 100%;
 	height: auto;
-	margin-top: 20px;
 }
 li {
 	font-size: 12px;
@@ -134,26 +139,32 @@ li span{
 	margin: 2px 0 0 10px;
 }
 main{
-	margin: 30px 20px 60px 10px;
 	border: 2px solid #0f2046;
+	border-radius: 5px;
 	background-color: rgba(255, 255, 255, .5);
-	/* padding: 10px 0 20px; */
-	width: 65%;
+	display: grid;
+	grid-template-columns: 30px 2fr 1fr 30px;
+	grid-template-rows: 30px auto auto auto auto auto auto;
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
 }
 nav, footer{
 	background-color: rgb(255, 255, 255);
-	margin-left: -30px;
+	margin: 10px -30px;
 	padding: 20px;
-	width: 100%;
+	/* width: 100%; */
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 nav li{
 	display: inline-block;
 	width: 8em;
 	text-align: center;
 	font-size: 16px;
+	border-radius: 5px;
 }
 nav li.onpage {
-	background-color: white;
+	background-color: lightyellow;
 	border: 2px solid #0f2046;
 	padding: 20px;
 }
@@ -163,11 +174,29 @@ nav a {
 }
 p {
 	max-width: 900px;
+	margin-bottom: 20px;
 }
 section {
 	background-color: rgb(255, 255, 255);
-	margin: 40px;
-	padding: 10px 30px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	padding: 30px;
+	border-radius: 10px;
+}
+section.intro {
+	grid-row-start: 2;
+}
+section.two {
+	grid-row-start: 3;
+}
+section.three {
+	grid-row-start: 4;
+}
+section.four {
+	grid-row-start: 5;
+}
+section.five {
+	grid-row-start: 6;
 }
 ul{
 	margin-top: 5px;
