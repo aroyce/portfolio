@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/royce.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -11,6 +12,7 @@
 </head>
 <body>
     <header>
+        <a id="top-section" class="jump-nav" href="#main">Jump to main content</a>
         <nav>
             <ul>
                 <li class="onpage">Home</li>
@@ -22,7 +24,6 @@
 
     </header> 
     <main>
-        <img class="landmark" src="images/umsi-headshot.jpg" alt="Adrienne's headshot"> 
         <section class="intro">
             <h1>Home<span>Welcome to my portfolio!</span></h1>
             <p>
@@ -41,7 +42,7 @@
                             </ul></li>
                         <li>The University of Michigan&mdash;Institute for Social Research<span>BioSocial Methods Collaborative Lab Manager&mdash;June 2016 to June 2018</span>
                             <ul>
-                                <li>Played key role in design and communication during U-M HomeLab construceion</li>
+                                <li>Played key role in design and communication during U-M HomeLab construction</li>
                                 <li>Estimated research project costs, tracked time sheets, and invoiced expenses</li>
                                 <li>Assisted ISR web designer with forthcoming BioSocial Methods Collaborative website</li>
                             </ul></li>
@@ -64,11 +65,16 @@
                     </ul>
 
     </section>
+    <aside>
+        <img class="landmark" src="images/umsi-headshot.jpg" alt="Adrienne's headshot"> 
+        <a href="#top-section" class="sticky" aria-label="to top of page">To Top</a>
+    </aside>
     </main>
+
     <footer>
         <ul>
             <li>
-                <a href="https://twitter.com/WindSweptTree" target="_blank" title="to Twitter page"><i class="fab fa-twitter-square"></i>@WindSweptTree
+                <a href="https://twitter.com/WindSweptTree" target="_blank" title="to Twitter page" aria-label="to Twitter page"><i class="fab fa-twitter-square"></i>@WindSweptTree
                 </a>
             </li>
             <li>
@@ -82,5 +88,6 @@
             </li>
         </ul>
     </footer>
+<script src="scripts/main.js"></script>
 </body>
 </html>
