@@ -1,13 +1,11 @@
-/*For screens greater than 1068px in width*/
-
+/* phone view: navigation converts to blocks across top of screen and no background image*/
 @media screen {
 	* {
 		box-sizing: border-box;
 	}
 	body {
 		font: 14px/1.4 geneva, sans-serif; color: #0b1938;
-		background: rgba(79, 140, 239, .5) url("../images/bosporous-optimized.jpg") 0 -60px no-repeat;
-		background-size: contain;
+		background-color: rgba(79, 140, 239, .5);
 	}
 	.jump-nav {
 		position: absolute;
@@ -16,35 +14,20 @@
 		background-color: white;
 		color: darkblue;
 	}
-	.landmark {
-		border-radius: 10px;
-		margin-top: 0;
+	.landmark, .sticky {
+		display: none;
 	}
 	.onpage {
-		background-color: lightyellow;
+		background-color: #FFD872;
 		padding: 20px;
 		height: auto;
 	}
-	.sticky {
-		position: -webkit-sticky; /* Safari  */
-		position: sticky;
-		display: block;
-		width: 5em;
-		text-align: center;
-		line-height: 3em;
-		top: 400px;
-		background-color: whitesmoke;
-		border: 2px solid blue;
-		margin: 250px auto 0;
+	.tile {
+		width: 100%;
+		margin: 10px;
 	}
 	.tile-container{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-	}
-	.tile {
-		width: 300px;
-		margin: 10px;
+		display: block;
 	}
 	a:hover {
 		color: gray;
@@ -53,10 +36,8 @@
 	a:visited {
 		color: #362819;
 	}
-	aside{
-		grid-column-start: 3;
-		grid-row-start: 2;
-		grid-row-end: 12;
+	aside {
+		display: none;
 	}
 	figcaption {
 		font-style: italic;
@@ -72,20 +53,20 @@
 		padding: 20px 50px;
 		list-style: none;
 	}
-	h1{
-		font: 500 36px 'Roboto', sans-serif;
-		text-align: left;
+	h1 {
+		font: 500 2em 'Roboto', sans-serif;
 	}
 	h1 span{
-		font-size: 18px;
+		font-size: 12px;
 		font-style: italic;
 		display: block;
 		margin: 20px 0 30px;
 	}
 	h2 {
-		font: 24px 'Roboto', sans-serif;
+		font-size: 1.5em;
 		text-align: left;
-		padding-bottom: 20px;
+		margin: 0;
+		padding-left: 0;
 	}
 	h3{
 		font: 16px 'Roboto', sans-serif;
@@ -107,56 +88,108 @@
 		color: gray;
 	}
 	img{
-		max-width: 100%;
+		width: 100%;
 		height: auto;
 		margin-top: 10px;
 	}
-
 	li span{
 		font-style: italic;
 		font-size: 10px;
 		display: block;
 		margin: 2px 0 0 10px;
 	}
-	main{
+	main {
 		background-color: rgba(255, 255, 255, .5);
-		display: grid;
-		grid-template-columns: 30px 2fr 1fr 30px;
-		grid-template-rows: 30px auto auto auto auto auto auto;
-		grid-row-gap: 20px;
-		grid-column-gap: 20px;
+		display: block;
+		width: 90%;
+		margin: 30px auto;
 	}
 	nav, footer{
 		background-color: rgb(255, 255, 255);
 		margin: 10px 0;
-
+	}
+	nav {
+		height: auto;
 	}
 	nav a {
 		text-decoration: none;
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 	}
+	nav li {
+		display: block;
+		width: auto;
+		height: 36px; 
+		text-align: center; 
+		padding: 0;
+	}
+	nav ul {
+		padding-top: 20px; 
+		margin: 0;
+	}
+	section {
+		background-color: rgb(255, 255, 255);
+		padding: 30px;
+		height: auto;
+	}
+	ul{
+		list-style-type: none;
+		margin-top: 5px;
+	}
+	li > ul{
+		margin: 2px 30px 5px;
+		list-style-type: disc;
+	}
+}/* end phone view*/
+
+/* iPad portrait view: Switch navigation layout; display main content as grid; add 'to top' link*/
+@media screen and (min-width: 500px) {
+	.sticky {
+		position: -webkit-sticky; /* Safari  */
+		position: sticky;
+		display: block;
+		width: 5em;
+		text-align: center;
+		line-height: 3em;
+		top: 400px;
+		background-color: whitesmoke;
+		border: 2px solid blue;
+		margin: 250px auto 0;
+	}
+	aside{
+		display: block;
+		grid-column-start: 3;
+		grid-row-start: 2;
+		grid-row-end: 12;
+	}
+
+	h2 {
+		padding-bottom: 20px;
+	}
+	main {
+		display: grid;
+		grid-template-columns: 5em 2fr 5em 0;
+		grid-template-rows: 30px auto auto auto auto auto auto;
+		grid-row-gap: 20px;
+		grid-column-gap: 20px;
+	}
+	nav {
+		margin: 0 auto;
+	}
 	nav li{
-	display: inline-block;
-	width: 10em;
-	line-height: 2em;
-	text-align: center;
-	font-size: 1em;
+		display: inline-block;
+		width: 10em;
+		line-height: 2em;
+		text-align: center;
+		font-size: 1em;
 	}
 	nav ul {
 		margin-left: 50px;
 	}
-
-	p {
-		max-width: 900px;
-		/* margin-bottom: 20px; */
-	}
 	section {
-		background-color: rgb(255, 255, 255);
 		grid-column-start: 2;
 		grid-column-end: 3;
 		padding: 30px;
 		border-radius: 10px;
-		height: auto;
 	}
 	section.intro {
 		grid-row-start: 2;
@@ -173,75 +206,38 @@
 	section.five {
 		grid-row-start: 6;
 	}
-	ul{
-		list-style-type: none;
-		margin-top: 5px;
-	}
-	li > ul{
-		margin: 2px 30px 5px;
-		list-style-type: disc;
-	}
-} /* end @ all media */
+}/* end iPad */
 
-/* iPad portrait view: Landmark image disappears and aside narrows*/
-	@media screen and (max-width: 1068px) {
+/*For screens greater than 1400px in width. Aside column widens to display landmark photo. Background image appears.*/
 
-		.landmark {
-			display: none;
-		}
-		main {
-			grid-template-columns: 5em 2fr 5em 0;
-		}
-		nav {
-			margin: 0 auto;
-		}
-		.sticky {
-			margin-top: 500px;
-		}
+@media screen and (min-width: 1400px){
+	.landmark {
+		display: block;
+		border-radius: 10px;
+		margin-top: 0;
 	}
-/* phone view: navigation converts to blocks across top of screen and no background image*/
-@media screen and (max-width: 769px){
-	aside {
-		display: none;
+	.tile-container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
 	}
 	body {
-		background: rgba(79, 140, 239, .5);
+		background: rgba(79, 140, 239, .5) url("../images/bosporous-optimized.jpg") 0 -60px no-repeat;
+		background-size: contain;
 	}
-	h1 {
-		font-size: 2em;
+	main{
+		grid-template-columns: 30px 2fr 1fr 30px;
 	}
-	h2 {
-		font-size: 1.5em;
-		text-align: left;
-		margin: 0;
-		padding-left: 0;
+	p {
+		max-width: 800px;
 	}
-	main {
-		display: block;
-		width: 90%;
-		margin: 30px auto;
-	}
-	nav {
-		height: auto;
-	}
-	nav ul {
-		padding-top: 20px; 
-		margin: 0;
-	}
-	nav li {
-		display: block;
-		width: auto;
-		height: 36px; 
-		text-align: center; 
-		padding: 0;
-	}
-	section {
-		border-radius: 0;
-	}
-}/* end phone view*/
+} /* end large display */
 
 /* print */
 @media print {
+	.tile {
+		width: 300px;
+	}
 	body {
 		font-family: serif;
 		color: #000;
