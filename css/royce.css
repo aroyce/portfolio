@@ -210,11 +210,14 @@
 
 /*For screens greater than 1400px in width. Aside column widens to display landmark photo. Background image appears.*/
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1450px){
 	.landmark {
 		display: block;
 		border-radius: 10px;
 		margin-top: 0;
+	}
+	.tile{
+		width: 250px;
 	}
 	.tile-container{
 		display: flex;
@@ -226,7 +229,7 @@
 		background-size: contain;
 	}
 	main{
-		grid-template-columns: 30px 2fr 1fr 30px;
+		grid-template-columns: 30px 2fr 300px 30px;
 	}
 	p {
 		max-width: 800px;
