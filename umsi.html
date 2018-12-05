@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/royce.css">
+    <link href="css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <title>UMSI&mdash;Aroyce</title>
 </head>
 <body>
@@ -18,7 +22,7 @@
                 <li><a href="index.html" title="Homepage">Home</a></li>
                 <li><a href="isr.html" title="Institute for Social Research">ISR</a></li>
                 <li class="onpage">UMSI</li>
-                <li><a href="ui-design.html" title="User Interface Design">UI Design</a></li>
+                <li><a href="wcc.html" title="Washtenaw Community College">WCC</a></li>
             </ul>
         </nav>   
     </header> 
@@ -78,6 +82,20 @@
             </figure>
 
         </section>
+        <section class = "five"> 
+                <h2>Alternative Spring Break&mdash;Washington, D.C.</h2>
+                <p>
+                    Each year the U-M School of Information arranges volunteer opportunities for Masters students during the week of Spring Break. In 2017 I joined the group traveling to Washington, DC where I and another student assisted the American Library Association with taking photos of the city for social media use.
+                </p>
+            <div class="gallery container">
+                <a href="images/pillar.jpg" aria-label="go to enlarged photo of " data-lightbox="washingtonDC" data-title="Washington, DC: Catholic University Library column detail"><img src="images/pillar.jpg" class="mix buildings" alt="the top of a column"></a>
+                <a href="images/lincoln-memorial.jpg" aria-label="go to enlarged photo of the Lincoln Memorial" data-lightbox="washingtonDC" data-title="Washington, DC: A closeup of the Lincoln Memorial"><img src="images/tile-lincoln-memorial.jpg" class="mix buildings" alt="The Lincoln Memorial in Washington DC"></a>
+                <a href="images/ladies-reading.jpg" aria-label="go to enlarged photo of mural" data-lightbox="washingtonDC" data-title="Washington, DC: A mural in Jefferson Great Hall of the Library of Congress"><img src="images/ladies-reading.jpg" class="mix people" alt="A mural of two ladies reading"></a>
+                <a href="images/national-cathedral.jpg" aria-label="go to enlarged photo of cathedral arches" data-lightbox="washingtonDC" data-title="Washington, DC: Arches in the tower of the National Cathedral"><img src="images/national-cathedral.jpg" class="mix buildings" alt="An enlarged photo of the National Cathedral arches"></a>
+                <a href="images/ethiopian-dinner.jpg" aria-label="go to enlarged photo of Ethiopian dinner" data-lightbox="washingtonDC" data-title="Washington, DC: Dinner at Karen Ethiopian restaurant"><img src="images/tile-ethiopian-dinner.jpg" class="mix people" alt="Adrienne Royce"></a>
+                <a href="images/magnolia-blossoms.jpg" aria-label="go to enlarged photo of magnolia blossoms" data-lightbox="washingtonDC" data-title="Washington, DC: A magnolia tree in bloom"><img src="images/magnolia-blossoms.jpg" class="mix flowers" alt="magnolia blossoms"></a>
+            </div>
+        </section>
         <aside>
             <img class="landmark" src="images/library-congress.jpg" alt="a navigational landmark photo showing arches within the Library of Congress">
             <a href="#top-section" class="sticky" aria-label="to top of page">To Top</a>
@@ -100,5 +118,11 @@
             </li>
         </ul>
     </footer>
+    <script src="js/main.js"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script>
+        var containerEl = document.querySelector('.container');
+        var mixer = mixitup(containerEl);
+    </script>
 </body>
 </html>

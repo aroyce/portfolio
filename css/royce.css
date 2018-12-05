@@ -7,12 +7,39 @@
 		font: 14px/1.4 geneva, sans-serif; color: #0b1938;
 		background-color: rgba(79, 140, 239, .5);
 	}
+	.gallery{
+		width: 98%;
+		margin:0 auto;
+		background-color: black;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.gallery img{
+		width: 100%;
+	}
 	.jump-nav {
 		position: absolute;
 		top: 0;
 		left: -1000px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
 		background-color: white;
 		color: darkblue;
+	}
+	.jump-nav:focus, .jump-nav:active {
+		left: auto;
+		top: auto;
+		height: auto;
+		width: auto;
+		overflow: auto;
+		margin: 10px;
+		padding: 10px;
+		border: 3px solid darkblue;
+		border-radius: 3px;
+		text-align: center;
 	}
 	.landmark, .sticky {
 		display: none;
@@ -232,7 +259,7 @@
 		grid-template-columns: 30px 2fr 300px 30px;
 	}
 	p {
-		max-width: 800px;
+		max-width: 80em;
 	}
 } /* end large display */
 
