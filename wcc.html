@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="images/tree-favicon.jpg"/>
     <link href="css/default.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/royce.css">
 	<link href="css/lightbox.css" rel="stylesheet">
@@ -27,11 +28,11 @@
                 </ul>
             </nav>  
 	</header>
-	<main>	
+	<main id="main">	
     <section class="intro">
         <h1>Washtenaw Community College<br><span>User Experience and Web Development Certificates</span></h1>
         <p>
-            I earned an User Experience advanced certificate and a web developer certificate at Washtenaw Community College. Classes included three semesters of user experience training, two semesters of HTML and CSS, two of user interface design and a search engine optimization course. Some of my projects are displayed below.
+            I earned an User Experience advanced certificate and a web developer certificate at Washtenaw Community College. Classes included three semesters of user experience training, two semesters of HTML and CSS, two of user interface design and a search engine optimization course. 
         </p>
     </section>
     <section class="two gallery container">
@@ -42,12 +43,10 @@
 		<a href="images/moss-love.jpg" aria-label="go to enlarged photo of pink moss" data-lightbox="portfolio-UI" data-title="UI Portfolio: An index page redesign for a company that sells moss"><img src="images/tile-moss-love.jpg" class="mix flowers" alt="Flowering pink moss on a gray rock"></a>
 		<a href="images/market-basket.jpg" aria-label="go to enlarged photo of Market Basket hompage" data-lightbox="portfolio-UI" data-title="UI Portfolio: A three-bucket webpage redesign"><img src="images/tile-market-basket.jpg" class="mix " alt="The redesigned homepage for a grocery store"></a>
     </section>
-    <section class = "three gallery container">
 
-    </section>
     <aside>
         <img class="landmark" src="images/ui-snowfarm-sm.jpg" alt="A screenshot from the index page of my Snow Farm website redesign">
-        <a href="#top-section" class="sticky" aria-label="to top of page">To Top</a>
+        <button onclick="topFunction()" id="myBtn" ><a href="#top-section"  aria-label="to top of page">To Top</a></button>
     </aside>
     </main>
     <footer>
@@ -70,9 +69,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/lightbox-plus-jquery.js"></script>
-	<script>
-		var containerEl = document.querySelector('.container');
-		var mixer = mixitup(containerEl);
-	</script>
+
 </body>
 </html>

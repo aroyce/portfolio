@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/jpg" href="images/tree-favicon.jpg"/>
     <link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/royce.css">
     <link href="css/lightbox.css" rel="stylesheet">
@@ -98,7 +99,7 @@
         </section>
         <aside>
             <img class="landmark" src="images/library-congress.jpg" alt="a navigational landmark photo showing arches within the Library of Congress">
-            <a href="#top-section" class="sticky" aria-label="to top of page">To Top</a>
+            <button onclick="topFunction()" id="myBtn" ><a href="#top-section"  aria-label="to top of page">To Top</a></button>
         </aside>
     </main>
     <footer>
@@ -120,9 +121,5 @@
     </footer>
     <script src="js/main.js"></script>
     <script src="js/lightbox-plus-jquery.js"></script>
-    <script>
-        var containerEl = document.querySelector('.container');
-        var mixer = mixitup(containerEl);
-    </script>
 </body>
 </html>
