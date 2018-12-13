@@ -7,10 +7,13 @@
 		font: 14px/1.4 geneva, sans-serif; color: #0b1938;
 		background-color: rgba(79, 140, 239, .5);
 	}
+	*:focus {
+		border: 2px solid blue;
+	}
 /*Pure Javascript Accordion codePEN by sureshrkm https://codepen.io/sureshrkm/pen/ZbzBpr */
 
 .accordionWrapper{
-	padding:30px;
+	padding:3px;
 	background:#fff;
 	width:100%;
 	border-radius: 10px;
@@ -169,10 +172,14 @@
 		margin-bottom: 10px 0 30px;
 	}
 	footer{
-		height: 10em;
+		height: auto;
+		position: relative;
 	}
 	footer a:visited {
 		color: blue;
+	}
+	footer li {
+		height: 50px;
 	}
 	footer ul {
 		padding: 20px 50px;
@@ -294,6 +301,17 @@
 		background-color: #555; /* Add a dark-grey background on hover */
 	  }
 /* end https://www.w3schools.com/howto/howto_js_scroll_to_top.asp  */
+	.accordionWrapper{
+		padding:30px;
+	}
+	.footer-right {
+		position: absolute;
+		left: 200px;
+		top: 0;
+	}
+	footer li:first-child {
+		margin-left: -15px;
+	}
 	.onpage {
 		border-radius: 10px;
 		border: 2px dotted orange;
@@ -304,7 +322,9 @@
 		grid-row-start: 2;
 		grid-row-end: 12;
 	}
-
+	footer {
+		position: relative;
+	}
 	h2 {
 		padding-bottom: 20px;
 	}
