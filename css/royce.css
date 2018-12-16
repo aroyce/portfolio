@@ -10,7 +10,7 @@
 	*:focus {
 		border: 2px solid blue;
 	}
-/*Pure Javascript Accordion codePEN by sureshrkm https://codepen.io/sureshrkm/pen/ZbzBpr */
+/*The following code is attributed to Pure Javascript Accordion codePEN by sureshrkm https://codepen.io/sureshrkm/pen/ZbzBpr */
 
 .accordionWrapper{
 	padding:3px;
@@ -73,7 +73,7 @@
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
 }
-/* end PEN by sureshrkm */
+/* end code for PEN by sureshrkm */
 
 /*accordion styling sourced from https://www.w3schools.com/howto/howto_js_accordion.asp and modified to fit PEN by sureshrkm*/
 
@@ -102,7 +102,7 @@
 		display: none;
 		overflow: hidden;
 	  }
-	  /*end w3schools styling */
+/*end of modified w3schools styling code */
 
 	.gallery{
 		width: 98%;
@@ -164,6 +164,7 @@
 	a:visited {
 		color: #362819;
 	}
+
 	aside {
 		display: none;
 	}
