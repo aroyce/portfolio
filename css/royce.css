@@ -370,6 +370,9 @@
 	section.five {
 		grid-row-start: 6;
 	}
+	section.six {
+		grid-row-start: 7;
+	}
 }/* end iPad */
 
 /*For screens greater than 1300px in width. Aside column widens to display landmark photo. Background image appears.*/
